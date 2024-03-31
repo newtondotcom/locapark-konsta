@@ -52,9 +52,12 @@
         }, 0);
     }
 
+    function save(){
+        window.location.href = "/#/save"
+    }
+
 </script>
 
-    <BlockTitle withBlock={false}>Styled Cards</BlockTitle>
     <div class="lg:grid lg:grid-cols-2">
         {#if alreadySaved}
       <Card outline>
@@ -92,7 +95,7 @@
         {translate("never")}
       </Card>
       {/if}
-          <Button large rounded>                
+          <Button large rounded onClick={save}>                
             {#if alreadySaved}{translate("change")}{:else}{translate("save")}{/if}
           </Button>
     </div>
