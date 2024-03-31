@@ -50,6 +50,7 @@ const translations = {
         "close":"Click me to close",
         "seefullscreen": "Voir en plein écran",
         "header" : "Sauvegarder une position ou une image",
+        "tutorial": "Tutoriel",
     },
     };
 
