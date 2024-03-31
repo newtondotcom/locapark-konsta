@@ -74,7 +74,7 @@
 
 {#if imageloaded || positionloaded}
 <Block>
-    <Button large href="/" class="k-color-brand-yellow"
+    <Button rounded large href="/" class="k-color-brand-yellow"
         >{translate("saveit")}
     </Button>
 </Block>
