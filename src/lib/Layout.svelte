@@ -18,7 +18,7 @@
       opened={leftPanelOpened}
       onBackdropClick={() => (leftPanelOpened = false)}
     >
-      <Navbar title="Left Panel">
+      <Navbar title="About">
         <Link slot="right" navbar onClick={() => (leftPanelOpened = false)}>
           Close
         </Link>
