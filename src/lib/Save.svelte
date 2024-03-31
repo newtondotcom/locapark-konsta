@@ -1,7 +1,7 @@
 <script lang="ts">
     let imageloaded = false;
     let positionloaded = false;
-    import { Button, MenuList, MenuListItem } from "konsta/svelte";
+    import { Block, BlockTitle, Button, MenuList, MenuListItem } from "konsta/svelte";
     import translate from "./locales/translations";
     import DemoIcon from "./DemoIcon.svelte";
     let textPosition = "";
@@ -52,6 +52,7 @@
     }
 </script>
 
+<BlockTitle>{translate("header")}</BlockTitle>
 <MenuList>
     <MenuListItem
         title={translate("picture")}
@@ -72,7 +73,9 @@
 </MenuList>
 
 {#if imageloaded || positionloaded}
+<Block>
     <Button large href="/" class="k-color-brand-yellow"
-        >{translate("saveit")}</Button
-    >
+        >{translate("saveit")}
+    </Button>
+</Block>
 {/if}

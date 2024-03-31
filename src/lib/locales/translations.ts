@@ -22,6 +22,7 @@ const translations = {
         "success":"Success !",
         "seefullscreen":"See it in full screen",
         "close":"Click me to close",
+        "header" : "Save location or picture",
         "mobile": "This app is not optimized for desktop use, please use it on a mobile device. In fact, desktop devices truly dont have any use of this app, as it is meant to be used to remember where you parked your car, and you don't park your car with a desktop device, do you ?",
         },
 
@@ -48,6 +49,7 @@ const translations = {
         "success": "Succès !",
         "close":"Click me to close",
         "seefullscreen": "Voir en plein écran",
+        "header" : "Sauvegarder une position ou une image",
     },
     };
 

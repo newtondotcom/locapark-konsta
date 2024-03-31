@@ -52,10 +52,6 @@
         }, 0);
     }
 
-    function save(){
-        window.location.href = "/#/save"
-    }
-
 </script>
 
     <div class="lg:grid lg:grid-cols-2">
@@ -95,9 +91,11 @@
         {translate("never")}
       </Card>
       {/if}
-          <Button large rounded onClick={save}>                
+      <Block>
+          <Button large rounded href="/#/save">                
             {#if alreadySaved}{translate("change")}{:else}{translate("save")}{/if}
           </Button>
+        </Block>
     </div>
 
 
