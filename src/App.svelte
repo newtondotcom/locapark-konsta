@@ -10,23 +10,9 @@ const routes = {
     '/': Use,
     '/save' : Save
 }
-
-let leftPanelOpened = true;
 </script>
 
 
 <Layout>
 <Router {routes}/>
-<Panel
-    side="left"
-    opened={leftPanelOpened}
-    onBackdropClick={() => (leftPanelOpened = false)}
->      
-<Navbar title="Left Panel">
-    <Link slot="right" navbar onClick={() => (leftPanelOpened = false)}>
-      Close
-    </Link>
-  </Navbar>
-<Download/>
-</Panel>
 </Layout>
