@@ -1,7 +1,7 @@
 <script>
   // @ts-ignore
   import { App, Page, Navbar, Panel, Link } from "konsta/svelte";
-  let leftPanelOpened = true;
+  let leftPanelOpened = false;
   import Download from "./Download.svelte";
 </script>
 
