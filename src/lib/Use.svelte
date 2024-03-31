@@ -2,6 +2,7 @@
     import {Block, BlockTitle, Button, Card, Link} from 'konsta/svelte';
     import { onMount } from 'svelte';
     import translate from './locales/translations';
+    import Car from '../assets/car.jpg';
     export let goToSave : any;
     
     let loading = true; 
@@ -53,19 +54,21 @@
     }
 
 </script>
-
-    <div class="lg:grid lg:grid-cols-2">
+<Block>
+<BlockTitle>
+{#if alreadySaved}
+    {translate("previouslocation")}
+{:else}
+    {translate("never")}
+{/if}
+</BlockTitle>
+</Block>
         {#if alreadySaved}
       <Card outline>
         <div
           class="ios:-mx-4 ios:-mt-4 h-48 p-4 flex items-end text-white ios:font-bold bg-cover bg-center material:rounded-xl mb-4 material:text-[22px]"
-          style="background-image: url(https://cdn.framework7.io/placeholder/nature-1000x600-3.jpg)"
-        >
-        </div>
-        <p>
-          Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies
-          efficitur vitae non felis. Phasellus quis nibh hendrerit...
-        </p>
+          style="background-image: url({savedImage || Car})"
+        />
         <svelte:fragment slot="footer">
           <div class="flex justify-between material:hidden">
           <Button class="mx-4" large rounded onClick={handleWaypoint}> 
@@ -86,17 +89,12 @@
           </div>
         </svelte:fragment>
       </Card>
-      {:else}
-      <Card>
-        {translate("never")}
-      </Card>
       {/if}
       <Block>
           <Button large rounded href="/#/save">                
             {#if alreadySaved}{translate("change")}{:else}{translate("save")}{/if}
           </Button>
-        </Block>
-    </div>
+    </Block>
 
 
 <!--
