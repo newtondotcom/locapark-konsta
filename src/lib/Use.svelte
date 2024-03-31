@@ -2,7 +2,6 @@
     import { Block, BlockTitle, Button, Card, Link } from "konsta/svelte";
     import { onMount } from "svelte";
     import translate from "./locales/translations";
-    import Car from "../assets/car.jpg";
 
     let loading = true;
     let alreadySaved = false;
@@ -70,7 +69,7 @@
     <Card outline>
         <div
             class="ios:-mx-4 ios:-mt-4 h-48 p-4 flex items-end text-white ios:font-bold bg-cover bg-center material:rounded-xl -mb-4 material:text-[22px]"
-            style="background-image: url({savedImage || Car})"
+            style="background-image: url({savedImage || "/car.jpg"})"
         />
         <svelte:fragment slot="footer">
             <div class="flex justify-between material:hidden">
