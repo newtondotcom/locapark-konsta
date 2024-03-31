@@ -78,7 +78,7 @@
           </li>
           <li>
             <a
-              href="https://github.com/newtondotcom/locapark"
+              href="https://github.com/newtondotcom/locapark-konsta"
               rel="noreferrer"
               target="_blank"
               class="text-gray-700 transition hover:text-gray-700/75"
