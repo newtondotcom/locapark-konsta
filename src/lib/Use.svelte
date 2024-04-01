@@ -98,7 +98,7 @@
                     </Button>
                 {/if}
                 {#if savedImage}
-                    <Button class="mx-4" large rounded onClick={openFullScreen}>
+                    <Button class="mx-4" large rounded href="/#/display">
                         <!-- {translate("seefullscreen")} -->
                         <svg
                             class="w-6 h-6"
