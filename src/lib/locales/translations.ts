@@ -51,7 +51,7 @@ const translations = {
         "close":"Click me to close",
         "seefullscreen": "Voir en plein écran",
         "header" : "Sauvegarder une position ou une image",
-        "tutorial": "Tutoriel",
+        "tutorial": "Tutoriel","mobile": "Cette application n'est pas optimisée pour une utilisation sur ordinateur de bureau, veuillez l'utiliser sur un appareil mobile. En fait, les appareils de bureau n'ont vraiment aucun intérêt pour cette application, car elle est conçue pour se souvenir où vous avez garé votre voiture, et vous ne garez pas votre voiture avec un appareil de bureau, n'est-ce pas ?"
     },
     };
 
