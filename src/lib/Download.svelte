@@ -15,10 +15,18 @@
                 "uaFullVersion",
             ];
             n.userAgentData.getHighEntropyValues(hints).then((ua) => {
-                console.log(ua);
+                if (ua.platform === "iOS") {
+                    platform = "IOS";
+                } else if (ua.platform === "Android") {
+                    platform = "Android";
+                }
             });
         } else {
-            console.log(n.userAgent);
+            if (n.userAgent.includes("iPhone") || n.userAgent.includes("iPad")) {
+                platform = "IOS";
+            } else if (n.userAgent.includes("Android")) {
+                platform = "Android";
+            }
             return "navigator.userAgentData is not supported!";
         }
     }
