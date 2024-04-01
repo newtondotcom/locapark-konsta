@@ -14,7 +14,7 @@
     </div>
     
     <div>
-      <h1 class="mb-4 mx-10 font-extrabold leading-none tracking-tight text-blue-300 text-md">{constants.version}</h1>
+      <h1 class="mb-4 mx-10 font-extrabold leading-none tracking-tight text-blue-300 text-md">v {constants.version}</h1>
     </div>
 
     <div class="relative bottom-4 mx-auto text-center">
@@ -29,7 +29,7 @@
             <span class="sr-only">LinkedIn</span>
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-8 -mt-2"
+            class="h-8 -mt-1"
             fill="currentColor"
             viewBox="0 0 24 24">
             <path
